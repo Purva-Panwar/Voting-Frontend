@@ -1,0 +1,149 @@
+.profile-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .profile-img:hover {
+    transform: scale(1.1);
+  }
+  .profile-container {
+
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #fff;
+
+    text-align: center;
+  }
+  
+  .profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .profile-details p {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  
+
+
+
+.profile-container {
+    max-width: 400px;
+    margin: 20px auto;
+    margin-top: 90px;
+    padding: 50px 10px 20px ;
+    background: #f0f2f3;
+  
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+
+  }
+  
+  .profile-container  h2{
+    color: blue;
+  }
+
+  .profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+   
+
+    border: 3px solid #007bff;
+    margin-bottom: 10px;
+  }
+  .profile-details .div{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+  }
+
+  .profile-details p {
+    font-size: 16px;
+    margin: 10px 0;
+    width: 100%;
+    color: #333;
+    text-align: start;
+
+
+  }
+  .details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 5%;
+  }
+
+  
+
+  .profile-container a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+  
+  .profile-container a:hover {
+    background: #0056b3;
+  }
+  .edit-pro{
+    margin-bottom: 20px;
+    margin-top: 0;
+  }
+
+  @media (max-width: 768px) {
+    .profile-container {
+      width: 90%;
+      padding: 15px;
+    }
+  
+ 
+    .profile-details p {
+      font-size: 14px;
+    }
+  
+    .profile-container a {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .profile-container {
+      width: 95%;
+      padding: 10px;
+    }
+  
+    .profile-img {
+      width: 80px;
+      height: 80px;
+    }
+  
+    .profile-details p {
+      font-size: 13px;
+    }
+  
+    .profile-container a {
+      font-size: 13px;
+      padding: 7px 14px;
+    }
+  }
+  
+   

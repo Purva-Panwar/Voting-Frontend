@@ -1,0 +1,163 @@
+
+.edit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh; /* Use min-height for better flexibility */
+  padding: 20px;
+  margin-top: 50px; /* Reduced margin for better flow */
+  background-color: #f0f2f5; /* Light background for contrast */
+  transition: all 0.3s ease;
+  flex-direction: column; /* Stack on small screens, optional */
+}
+
+/* Profile details container */
+.edit-profile-details {
+  background: #ffffff;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 550px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+/* Heading style */
+.edit-profile-details h2 {
+  color: #007bff;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* Profile image section */
+.imgpro {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+/* Profile image styling with hover effect */
+.edit-profile-img {
+  width: 140px;
+  height: 140px;
+  border: 3px solid #007bff;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+  transition: all 0.3s ease, box-shadow 0.3s ease;
+}
+.edit-profile-img:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+
+/* Labels */
+label {
+  display: block;
+  text-align: left;
+  margin: 8px 0 4px;
+  font-weight: 600;
+  color: #333;
+  font-size: 14px;
+}
+
+/* Input fields with modern styling and focus effects */
+.in {
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+.in:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+  outline: none;
+}
+
+/* Buttons styling */
+.twobtn {
+  display: flex;
+  gap: 20px;
+  padding: 20px 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Button styles with hover and transition effects */
+.twobtn button {
+  padding: 12px 25px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+  min-width: 120px;
+}
+
+/* Call-to-action primary button */
+.btn.primary {
+  background-color: #007bff;
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.2);
+}
+.btn.primary:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 86, 179, 0.3);
+}
+
+/* Secondary button style (if needed) */
+button {
+  background-color: rgb(225, 235, 235);
+  color: #333;
+}
+button:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+/* Error message styling for better visibility */
+.error {
+  color: #dc3545; /* Bootstrap red */
+  font-size: 0.95rem;
+  margin-top: 5px;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+/* Responsiveness improvements */
+@media (max-width: 768px) {
+  .edit {
+    padding: 10px;
+    margin-top: 20px;
+  }
+  .edit-profile-details {
+    padding: 20px;
+  }
+  .twobtn {
+    flex-direction: column;
+    align-items: center;
+  }
+  .twobtn button {
+    width: 80%;
+  }
+}
+@media (max-width: 480px) {
+  /* Small screens adjustments */
+  .edit-profile-details {
+    padding: 15px;
+  }
+  label {
+    font-size: 13px;
+  }
+  .twobtn button {
+    width: 100%;
+    padding: 12px;
+  }
+}
