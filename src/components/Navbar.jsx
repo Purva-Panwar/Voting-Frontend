@@ -148,7 +148,7 @@ const Navbar = () => {
                       className="profile-initial"
                     >
                       <img
-                        src="https://img.freepik.com/free-vector/user-circles-set_78370-4704.jpg"
+                        src="https://img.freepik.com/free-vector/blue-circle-with-white-user_78370-4707.jpg?ga=GA1.1.145594747.1747650246&semt=ais_hybrid&w=740"
                         alt="Profile"
                       />
                     </NavLink>
